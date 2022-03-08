@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satisfaction Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="title"><b> Customer Satisfaction Survey Form </b></h1>
+        <br>
+        <p id="description" style="color: #a239ca">
+
+            Thank you for taking the time to help us improve our services
+        </p>
+        <br>
+    </header>
+    <main>
+        <div class="form">
+            <form action="" id="survey-form">
+                <label id="name-label" for="name">Name</label>
+                <br>
+                <input type="text" id="name" class="boxes" placeholder="Enter your Name" required>
+                <br>
+                <br>
+                <label id="email-label" for="email">Email</label>
+                <br>
+                <input type="email" id="email" class="boxes" placeholder="Enter your Email" required>
+                <br>
+                <br>
+                <label id="number-label" for="number">How satisfied were you with your experience?</label>
+                <br>
+                <input type="number" class="boxes" id="number" min="0" max="10" placeholder="On a scale of 1 to 10"
+                    required>
+                <br>
+                <br>
+                <label for="dropdown">How likely are you to recommend us to family, friends, or colleagues?</label>
+                <br>
+                <select class="boxes" id="dropdown">
+                    <option value="Extremely unlikely">Extremely unlikely</option>
+                    <option value="Somewhat unlikely">Somewhat unlikely</option>
+                    <option value="Neutral">Neutral</option>
+                    <option value="Somewhat likely">Somewhat likely</option>
+                    <option value="Extremely likely">Extremely likely</option>
+                </select>
+                <br>
+                <br>
+                <label for="choose">Would you purchase from our company again?</label>
+                <br>
+                <input id="choose" type="radio" name="purchase" value="yes" id="yes">
+                <label for="yes">yes</label>
+                <br>
+                <input id="choose" type="radio" name="purchase" value="no" id="no">
+                <label for="no">No</label>
+                <br>
+                <br>
+                <label name="contact-op">How would you prefer we contact you ?</label>
+                <br>
+                <input name="contact-op" type="checkbox" value="phone">
+                <label for="">Phone</label>
+                <br>
+                <input id="text" name="contact-op" type="checkbox" value="text">
+                <label for="text">Text</label>
+                <br>
+                <input id="email" name="contact-op" type="checkbox" value="email">
+                <label for="email">Email</label>
+                <br>
+                <input id="mail" name="contact-op" type="checkbox" value="mail">
+                <label for="mail">Mail</label>
+                <br>
+                <br>
+                <label for="text-area"> How can we improve your experience for the future?</label>
+                <br>
+                <textarea id="text-area" rows="10" placeholder="Type here . . . "></textarea>
+                <br>
+                <br>
+                <input id="submit" class="btn-submit" type="submit" value="Submit">
+
+            </form>
+        </div>
+    </main>
+    <br>
+    <footer>
+        <p>Design and code by - <a href="https://codepen.io/melkam-neh" target="_blank"> Melkamneh</a></p>
+    </footer>
+</body>
+
+</html>
